@@ -1,0 +1,71 @@
+/*.navbar-brand {
+  animation-name: logo;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  transition: 0.5;
+}
+
+@keyframes logo {
+  0% {
+    text-decoration: underline red;
+  }
+  25% {
+    text-decoration: underline yellow;
+  }
+  50% {
+    text-decoration: underline blue;
+  }
+  100% {
+    text-decoration: underline green;
+  }
+}
+*/
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #ebebeb;
+  font-size: 1rem;
+  font-family: "Playfair Display", serif;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: logo 6s ease-in-out;
+  display: inline-block;
+  animation-direction: reverse;
+}
+
+@keyframes logo {
+  to {
+    background-position: 200% center;
+  }
+}
+
+img {
+  width: 450px;
+  height: auto;
+}
+
+.nav-link {
+  font-size: 2rem;
+}
