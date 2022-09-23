@@ -21,21 +21,25 @@
       crossorigin="anonymous"
     ></script>
 
-     <!--Icons-->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    
+    <!--Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
     <!-- Egna Länkar -->
 
     <script src="/js/main.js"></script>
     <link rel="stylesheet" href="css/style.css" />
-
   </head>
 
-  <body >
-    
-    <header class="navbar bg-light fixed">
-      <nav class="container-fluid ">
-        <a class="navbar-brand"  href="index.html" >Hazan Yigit</a>
+  <body>
+    <!--Navigation-->
+
+    <header class="navbar bg-light fixed-top">
+      <nav class="container-fluid">
+        <a class="navbar-brand ps-4" href="index.html">Hazan Yigit</a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -45,117 +49,231 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
+        <aside
           class="offcanvas offcanvas-end"
           tabindex="-1"
           id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-          >
-          
-          <div class="offcanvas-body">
-           
+        >
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+          ></button>
+
+          <aside class="offcanvas-body menu-items">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html"
                   >Home</a
                 >
-              </li> 
+              </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="about.html"
+                <a class="nav-link active" aria-current="page" href="#about"
                   >About</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="portfolio.html"
+                <a class="nav-link active" aria-current="page" href="#portfolio"
                   >Portfolio</a
                 >
               </li>
-             
+
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="contact.html"
+                <a class="nav-link active" aria-current="page" href="#contact"
                   >Contact</a
                 >
-              </li> 
+              </li>
             </ul>
-          </div>
-        </div>
-     
+
+            <aside class="container pt-4 icons-wrap">
+              <ul class="mb-4 icons">
+                <li>
+                  <a
+                    class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    href="https://github.com/h4zan"
+                    target="”_blank”"
+                    title="Link to Github"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+                    style="font-size: 30px"
+                    ><i class="bi bi-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    href="https://www.linkedin.com/in/hazan-y-91119a24b"
+                    target="”_blank”"
+                    title="Link to Linkedin"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+                    style="font-size: 30px"
+                    ><i class="bi bi-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </aside>
+          </aside>
+        </aside>
       </nav>
     </header>
-    
-    <main class="container-fluid ">
-      <article class="row align-items-center text-center m-3 vh-100 ">
-        
-        <section class="col-12 col-md-6  col-lg-6"><img src="/assets/images/Photo.jpg" class="img-fluid rounded-circle
-          shadow-sm  mb-1  "  alt="Black and white picture of a women">
-        
-        </section>
+    <!--Intro-->
 
-        <section class="col-12 col-md-6 col-lg-6 bg-light   shadow-lg p-3 mb-5 rounded"> 
-          <h2 >Welcome!</h2>
-          <p class="intro-text">My name is Hazan Yigit. <br>
-            I am a front-end developer based in
-            Stockholm, Sweden.
-            </p>
+    <main class="container-fluid">
+      <article
+        class="row vh-100 align-items-center text-center m-3 vh-100 wrapper-intro"
+      >
+        <section
+          class="col-12 col-md-6 col-lg-6 p-3 mb-5 rounded border border-light rounded-3 bg-dark p-2 shadow-risen"
+          style="--bs-bg-opacity: 0.5"
+        >
+          <h1>Welcome!</h1>
+          <p class="intro-text">
+            My name is Hazan Yigit. <br />
+            I am a front-end developer based in Stockholm, Sweden.
+          </p>
         </section>
       </article>
 
-      <article class="container">
-        <h3 class="row justify-content-center text-center">About</h3>
+      <!--About-->
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat accusantium commodi veritatis autem nam, quasi alias. Ex saepe veniam, tenetur, magni pariatur dignissimos id quia error alias quos asperiores.
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sapiente, error, ullam aliquid labore corrupti nulla facere praesentium aperiam nobis a necessitatibus earum. Odio deserunt itaque consequuntur, qui sequi sapiente.
-       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste quidem cumque, beatae dolores ea maxime modi maiores officiis quisquam itaque, distinctio aut! Facere aspernatur doloremque amet velit veritatis itaque sapiente.
-       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam facilis reprehenderit dolorum illum iusto, eligendi atque quas beatae perferendis maxime. Non quas amet delectus esse, fuga obcaecati aliquam voluptate repellendus!
-        </p>
+      <article
+        id="about"
+        class="row justify-content-center text-center about-wrapper p-5 m-3"
+      >
+        <h3 class="col">About</h3>
+
+        <section class="col-12">
+          <img
+            src="assets/images/Photo.jpg"
+            class="img-fluid rounded-circle m-2 shadow-sm mb-1"
+            alt="Black and white picture of a women"
+          />
+        </section>
+        <section
+          class="col-12 col-md-6 col-lg-6 about-text p-3 m-3 text-align-center"
+        >
+          <p lang="zxx">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+            quaerat accusantium commodi veritatis autem nam, quasi alias. Ex
+            saepe veniam, tenetur, magni pariatur dignissimos id quia error
+            alias quos asperiores.
+          </p>
+          <p lang="zxx">
+            Ex saepe veniam, tenetur, magni pariatur dignissimos id quia error
+            alias quos asperiores. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Consequuntur sapiente, error, ullam aliquid labore
+            corrupti nulla facere praesentium aperiam nobis a necessitatibus
+            earum. Odio deserunt itaque consequuntur, qui sequi sapiente.
+          </p>
+        </section>
+      </article>
+
+      <!--Portfolio-->
+
+      <article
+        id="portfolio"
+        class="row justify-content-center text-center about-wrapper p-5 m-3 project-wrapper"
+      >
+        <h4 class="align-middle">Portfolio</h4>
+        <section class="col-12 col-md-6 col-lg-4">
+          <h5>Fashion Project</h5>
+          <img
+            src="assets/images/roman-synkevych.jpg"
+            class="img-fluid"
+            alt="Phone screen with text: Eat, Sleep, Code, Repeat"
+          />
+          <p>Project Information</p>
+          <p lang="zxx">
+            Labore veniam totam quos reiciendis unde expedita illo voluptate,
+            nihil aliquam placeat facilis hic ipsum id quia at nemo tempora eos.
+          </p>
+        </section>
+        <section class="col-12 col-md-3 col-lg-4">
+          <h5>Game Project</h5>
+          <img
+            src="assets/images/arpad-czapp.jpg"
+            class="img-fluid"
+            alt="A women typing on computer"
+          />
+          <p>Project Information</p>
+          <p lang="zxx">
+            Itaque velit voluptatibus fugiat deserunt neque earum vitae
+            consequuntur placeat architecto ipsam illo, consectetur nulla, autem
+            exercitationem non aspernatur, dignissimos totam iste.
+          </p>
+        </section>
+        <section class="col-12 col-md-3 col-lg-4">
+          <h5>Expriment Project</h5>
+          <img
+            src="assets/images/valery-sysoev.jpg"
+            class="img-fluid"
+            alt="Image of screen with code"
+          />
+          <p>Project Information</p>
+          <p lang="zxx">
+            Quod, harum rem debitis maiores illo labore voluptas placeat quos
+            ipsa! Quae vel veritatis mollitia, tenetur iure quas cupiditate
+            delectus exercitationem labore.
+          </p>
+        </section>
       </article>
     </main>
 
+    <!--Contact-->
 
-    
+    <footer
+      id="contact"
+      class="row footer-wrapper text-center justify-content-around"
+      style="background-color: rgba(0, 0, 0, 0.2)"
+    >
+      <section
+        class="col-12 col-lg-6 justify-content-center text-center p-3 footer-info align-self-start order-1"
+      >
+        <h6 class="align-middle">Stay Connected</h6>
 
+        <ul>
+          <li>Hazan Yigit</li>
+          <li><b>Phone-number:</b> +46 000 000 000</li>
+          <li><b>E-mail:</b> hazan.yigit@medieinstitutet.se</li>
+        </ul>
+      </section>
 
-        <!-- Section: Social media -->
+      <section
+        class="col-12 col-lg-6 justify-content-center text-center pt-4 footer-icon-wrap align-self-end order-2"
+      >
+        <h6 class="align-middle">For More</h6>
+        <ul class="footer-icons justify-content-center text-center mb-4">
+          <li>
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://github.com/h4zan"
+              target="”_blank”"
+              title="Link to Github"
+              role="button"
+              data-mdb-ripple-color="dark"
+              style="font-size: 30px"
+              ><i class="bi bi-github"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://www.linkedin.com/in/hazan-y-91119a24b"
+              target="”_blank”"
+              title="Link to Linkedin"
+              role="button"
+              data-mdb-ripple-color="dark"
+              style="font-size: 30px"
+              ><i class="bi bi-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </section>
 
-    <footer class="text-center text-white" style="background-color: #f1f1f1;">
-      
-      <!-- Grid container -->
-      <div class="container pt-4">
-        <section class="mb-4">
-     
-    <!-- Github -->
-    <a
-    class="btn btn-link btn-floating btn-lg text-dark m-1"
-    href="https://github.com/h4zan"
-    target=”_blank”
-    title="Link to Github"
-    role="button"
-    data-mdb-ripple-color="dark"
-    ><i class="bi bi-github"></i></i></a>
-
-          <!-- Linkedin -->
-          <a
-            class="btn btn-link btn-floating btn-lg text-dark m-1"
-            href="https://www.linkedin.com/in/hazan-y-91119a24b"
-            target=”_blank”
-            title="Link to Linkedin"
-            role="button"
-            data-mdb-ripple-color="dark"
-            ><i class="bi bi-linkedin"></i>
-              
-          </a>
-          
-        </section>
-        
-      </div>
-    
-      <!-- Copyright -->
-      <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2022 Copyright:
-        <p
->         Hazan Yigit</p>
-      </div>
+      <p class="col-12 col-lg-6 footer-copyright text-center order-3 m-0">
+        Hazan Yigit © 2022 Copyright
+      </p>
     </footer>
-
   </body>
 </html>
